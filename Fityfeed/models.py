@@ -36,7 +36,6 @@ class Fooditem(models.Model):
     def __str__(self):
         return str(self.name)
 
-#for user page-------------------------------------------------------------
 class UserFooditem(models.Model):
     customer = models.ManyToManyField(Customer ,blank=True)
     fooditem=models.ManyToManyField(Fooditem)

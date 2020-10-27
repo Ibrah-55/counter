@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 from .decorators import *
 from django.contrib.auth.models import Group
 from .filers import fooditemFilter
+# Create your views here.
 
 @login_required(login_url='login')
 @admin_only
